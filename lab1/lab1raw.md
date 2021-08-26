@@ -4,7 +4,7 @@ autoscale: true
 slide-transition: true
 
 # Welcome to CS2030S Lab 1!
-## 3 August 2021 [16A]
+## 27 August 2021 [16A]
 
 [.slidenumbers: false]
 
