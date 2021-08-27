@@ -6,6 +6,7 @@
 
 Useful resources:
 
+- (Best) Java IDE: https://www.jetbrains.com/idea/
 - Java11: https://docs.oracle.com/en/java/javase/11/docs/api/
 - tmux: https://gist.github.com/MohamedAlaa/2961058
 - [vim guide](vimkeys.pdf)
