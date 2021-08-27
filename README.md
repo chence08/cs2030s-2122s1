@@ -1,3 +1,9 @@
+- [Link to the official course repository](https://github.com/nus-cs2030/2122-s1), where you earn participation through contributions to Issues and [**Wiki**](https://github.com/nus-cs2030/2122-s1/wiki), the instructions are pretty comprehensive on how to setup your local environment!
+
+- Always take note of LumiNUS Announcements for updates!
+
+------
+
 Useful resources:
 
 - Java11: https://docs.oracle.com/en/java/javase/11/docs/api/
