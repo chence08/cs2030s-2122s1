@@ -340,7 +340,7 @@ class B {
 }
 
 class A extends B {
-    public void p (double i) {
+    public void p(double i) {
         System.out.println(i);
     }
 }
@@ -364,7 +364,7 @@ class B {
 }
 
 class A extends B {
-    public void p (int i) {
+    public void p(int i) {
         System.out.println(i);
     }
 }
