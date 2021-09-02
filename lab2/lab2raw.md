@@ -37,7 +37,7 @@ slide-transition: true
 
 2. `Point::contains(Point center)` or `Point::contains(Circle c)` — contains method should be **encapsulated** in the `Circle` class instead to reduce coupling.
 
-3. Convoluted code (invoking multiple methods in one line)
+3. Convoluted code (invoking multiple methods in one line)[^1]
 
    ```java
    Circle createUnitCircle(Point p, Point q) {
@@ -46,7 +46,7 @@ slide-transition: true
    }
    ```
 
-   
+[^1]: taken from one of you
 
 ---
 
@@ -417,7 +417,9 @@ Human eat(Food food);
 
 - Polymorphism means that a variable of a supertype can refer to a subtype object.
 - A subclass is a specialization of its superclass; every instance of a subclass is also an instance of its superclass, but not vice versa.
-  - Every circle is a geometric object, but not every geometric object is a circle.
+- Every circle is a geometric object, but not every geometric object is a circle.
+
+------
 
 ```java
 void displayObject(GeometricObject object) {
@@ -429,11 +431,17 @@ void displayObject(GeometricObject object) {
 
 displayObject(new Circle(1, "red"));
 displayObject(new Rectangle(1, 1, "black"));
+displayObject(new Object()); // a superclass
 ```
 
 ```
-[Output] red circle of dimension 1
+[Output]
+red circle of dimension 1
 black rectangle of dimension 1x1
+| Error:
+| incompatible types: java.lang.Object cannot be converted to GeometricObject
+| displayObject(new Object())
+|               ^----------^
 ```
 
 ------
