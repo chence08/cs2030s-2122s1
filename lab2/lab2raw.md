@@ -454,4 +454,4 @@ elinks index.html
 
 1. What types of Cruises and Loaders are there?
 2. What relationships do they share?
-
+3. If done well, your implementation should be easily extended into Level 6 (Secret Level), released later on CodeCrunch.
