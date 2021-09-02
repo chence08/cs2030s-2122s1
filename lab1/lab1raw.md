@@ -312,13 +312,13 @@ zip -r cs2030_folder.zip cs2030_folder
 - Use simple math you learnt in your high school!
 - Use trigonometry to get your angle between two lines.
 
-![inline](trigo1.png)![inline](trigo2.png)
+![inline](src/trigo1.png)![inline](src/trigo2.png)
 
 ------
 
 # Lab 1: Level 3 Hint
 
-![inline](level3hint.png)
+![inline](src/level3hint.png)
 
 ------
 
