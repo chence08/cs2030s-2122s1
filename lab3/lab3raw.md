@@ -208,12 +208,12 @@ for (int row = 0; row < matrix.length; row++) {
 
 ------
 
+[.footer: Extra Reading]
+
 |                | Variables                                    | Constructors                                                 | Methods                                                      |
 | -------------- | -------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Abstract class | No restrictions.                             | Constructors are invoked by subclasses through constructor chaining. An abstract class cannot be instantiated using the `new` operator. | No restrictions.                                             |
 | Interface      | All variables must be `public static final`. | **No constructors.** An interface cannot be instantiated using the `new` operator. | May contain **public abstract** instance methods, **public default** and **public static** methods. |
-
-[.footer: Extra Reading]
 
 ------
 
@@ -235,3 +235,15 @@ for (int row = 0; row < matrix.length; row++) {
   class String implements Comparable {...}
   class Circle extends GeometricObject implements Comparable {...}
   ```
+
+------
+
+# Interesting Points about Abstract Classes
+
+[.footer: Extra Reading]
+
+1. An abstract method cannot be contained in a non-abstract class. If a subclass of an abstract superclass does not implement all the abstract methods, the subclass must be defined as abstract. In other words, in a non-abstract subclass extended from an abstract class, all the abstract methods must be implemented.
+2. Abstract methods are not static.
+3. It is possible to define an abstract class that doesn't contain any abstract methods. This abstract class is used as a base class for defining subclasses.
+4. A subclass can override a method from its superclass to define it as abstract. This is useful when the implementation of the method in the superclass becomes invalid in the subclass. In this case, the subclass must be defined as abstract.
+5. A subclass can be abstract even if its superclass is concrete.
