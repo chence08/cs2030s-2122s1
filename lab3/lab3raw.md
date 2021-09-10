@@ -10,6 +10,16 @@ slide-transition: true
 
 ------
 
+# Lab 2 Feedback
+
+Only 9/18 people completed! :broken_heart:
+
+1. **MAJOR**: Overloaded constructor in Cruise, constructor of BigCruise uses the overloaded constructor in Cruise (does not make sense).
+2. **MINOR**: static final variable name not fully capitalized.
+3. **MINOR**: Missing `@Override` tag.
+
+------
+
 # Lab 2 Recap - Boolean Expressions
 
 ```java
@@ -26,7 +36,7 @@ return booleanMethod(parameter); // Just return the result
 
 ------
 
-# **Lab 2 Recap -** if-else Statements
+# Lab 2 Recap - if-else Statements
 
 ```java
 if (condition) {
@@ -45,7 +55,7 @@ if (condition) {
 
 ------
 
-# **Lab 2 Recap -** Variable Names
+# Lab 2 Recap - Variable Names
 
 [.column]
 
@@ -132,6 +142,8 @@ Java does not allow for multiple inheritance through classes, so subclasses can 
 ------
 
 # Order of Declaration (Interfaces and Superclasses)
+
+[.header: text-scale(0.94)]
 
 ```java
 public class A extends B implements C, D, E {
@@ -247,3 +259,4 @@ for (int row = 0; row < matrix.length; row++) {
 3. It is possible to define an abstract class that doesn't contain any abstract methods. This abstract class is used as a base class for defining subclasses.
 4. A subclass can override a method from its superclass to define it as abstract. This is useful when the implementation of the method in the superclass becomes invalid in the subclass. In this case, the subclass must be defined as abstract.
 5. A subclass can be abstract even if its superclass is concrete.
+
