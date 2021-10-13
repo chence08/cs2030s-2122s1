@@ -1,4 +1,47 @@
-## (NEW) Useful Vim and JShell commands
+## Screen Recording with ffmpeg
+
+> In case of online exam
+
+Assuming you have no problems installing ffmpeg, here's how you should go about settings so that you can use it reliably on the day of the exam.
+
+1. Check the video devices configuration by running
+
+   ```bash
+   ffmpeg -f avfoundation -list_devices true -i ""
+   ```
+
+   You should see this section in the output:
+
+   ```
+   [AVFoundation indev @ 0x7fee71414300] AVFoundation video devices:
+   [AVFoundation indev @ 0x7fee71414300] [0] NeuralCam Live
+   [AVFoundation indev @ 0x7fee71414300] [1] FaceTime HD Camera (Built-in)
+   [AVFoundation indev @ 0x7fee71414300] [2] Capture screen 0
+   ```
+
+   You should only have one screen during the exam, so you should only see one "Capture screen 0". So, `2` is the label for recording your screen.
+
+2. Create an alias to for fast screen recording.
+
+   Add this line to your `~/.zshrc` or `~/.bashrc` using vim:
+
+   ```
+   alias recordscr='ffmpeg -f avfoundation -r 1 -probesize 20M -threads 1 -i "2:none" -vcodec libx264 -b:v 128k -s hd720'
+   ```
+
+   `:wq` and `source` the file.
+
+3. Test it!
+
+   ```bash
+   $ recordscr test.mp4
+   ```
+
+   Play it back to see if it's recording the correct thing.
+
+------
+
+## Useful Vim and JShell commands
 
 > How to do Lab 1 like a pro?
 
