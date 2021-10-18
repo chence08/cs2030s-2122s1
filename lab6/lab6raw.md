@@ -183,10 +183,30 @@ Function<Integer, Integer> addOne = new Function<>() {
   ```java
   Function<Integer, Integer> addOne = x -> x + 1;
   ```
+  
 - Takes in an `(Integer) x` and returns an `(Integer) x+1`
+
 - How does the Java compiler know which method the lambda expression is implementing? Well, `Function` is a SAM interface, so there is only one method that it can implement (the `apply` method)
 
 ------
+
+# Other Functional Interfaces
+
+[.background-color: #FFF176]
+
+> Observe the input/output carefully
+
+| Interface           | Function Signature    | Example               |
+| ------------------- | --------------------- | --------------------- |
+| `Predicate<T>`      | `boolean test(T t)`   | `Collection::isEmpty` |
+| `Function<T,R>`     | `R apply(T t)`        | `Arrays::asList`      |
+| `Supplier<T>`       | `T get()`             | `Math::random`        |
+| `Consumer<T>`       | `void accept(T t)`    | `System.out::println` |
+| `UnaryOperator<T>`  | `T apply(T t)`        | `String::toLowerCase` |
+| `BinaryOperator<T>` | `T apply(T t1, T t2)` | `BigInteger::add`     |
+
+------
+
 # [`java.util.Optional<T>`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html)
 
 - `Optional` class is a useful abstraction to deal with `null` values
@@ -304,8 +324,8 @@ $6 ==> Optional[Optional[1]]
 # [fit] Invariance, Contravariance, Covariance (Further Reading)
 
 [.background-color: #000000]
-[.text: #FFFFFF]
-[.header: #FFFFFF]
+[.text: #FFFFFF, text-scale(0.7)]
+[.header: #FFFFFF, text-scale(1)]
 [.slidenumber-style: #FFFFFF]
 
 > Prefer lists to arrays
@@ -325,7 +345,7 @@ jshell> objectArray[0] = "I don't fit in"
 |        at (#8:1)
 ```
 
-Find out mistake at runtime. ❌
+Finds out mistake at runtime. ❌
 
 [.column]
 
@@ -340,7 +360,7 @@ cannot be converted to java.util.List<java.lang.Object>
 |                    ^-------------------^
 ```
 
-Find out mistake at compile time. ✅
+Finds out mistake at compile time. ✅
 
 ------
 
