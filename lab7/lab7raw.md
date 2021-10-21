@@ -19,6 +19,14 @@ Please login to your pe node once it's 4pm.
 
 ------
 
+# PA2 Alternative Arrangements
+
+- PA2 falls on the Friday of Week 12 (**05/11/2021**)
+- Please let us know if you have to take tests immediately **before** or **after** your CS2030S lab (e.g. if you have lab from 1000-1200 and your test is at 1400 then it's not counted)
+- We will book venues for you to take your test **if you need them** (PA2 will end around 10-15 minutes before the end of your lab slot so you can go elsewhere to take the test if you prefer)
+
+------
+
 # Learning Objectives
 
 [.column]
@@ -248,6 +256,8 @@ return result;
 
 > Reduce the stream into a nonstream value.
 
+[.footer: [`java.util.function.BiFunction<T,U,R>` API ](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html)]
+
 [.column]
 
 ## Simple
@@ -300,4 +310,4 @@ $10 ==> 19
 
 > `reduce` is not constrained to execute sequentially, i.e. can be applied to parallel streams.
 >
-> If using parallel streams, the operation in `accumulator` must be necessarily *associative*.
+> If using parallel streams, the operation in `accumulator` must be *associative*. Otherwise, the results would be inconsistent.
