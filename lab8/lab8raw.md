@@ -3,8 +3,8 @@ slidecount: true
 autoscale: true
 slide-transition: true
 
-# Welcome to CS2030S Lab 7!
-## 22 October 2021 [16A]
+# Welcome to CS2030S Lab 8!
+## 29 October 2021 [16A]
 
 [.autoscale: false]
 [.text: alignment(center)]
